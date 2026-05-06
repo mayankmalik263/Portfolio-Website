@@ -1,0 +1,55 @@
+{
+  "projects": [
+    {
+      "name": "ML Enhanced Dynamic MAC Protocol Optimization",
+      "description": "A continuous-time, physics-aware Discrete-Event Simulation framework that models MAC-layer protocols and uses a Random Forest classifier to dynamically optimize protocol selection in real-time.",
+      "image": "",
+      "tags": [
+        "Machine Learning",
+        "Networking",
+        "Python"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mayankmalik263/ML-Enhanced-Dynamic-MAC-Protocol-Optimization",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "IMC Prosperity Trading Bot",
+      "description": "A robust algorithmic trading bot developed for the IMC Prosperity challenge. Features safe mid-price handling, dynamic execution thresholds, and queue-priority logic to execute profitable trades.",
+      "image": "",
+      "tags": [
+        "Algorithmic Trading",
+        "Python",
+        "Finance"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mayankmalik263/IMC_Prosperity_Trading_Bot",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "ML Framework for AQI Classification",
+      "description": "An applied machine learning framework leveraging XGBoost to classify the Air Quality Index (AQI) of the Delhi NCR region, achieving 98% accuracy through temporal data harmonization.",
+      "image": "",
+      "tags": [
+        "Machine Learning",
+        "Data Science",
+        "Python"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mayankmalik263/ML-Framework-for-Air-Quality-Index-AQI-Classification",
+          "icon": "github"
+        }
+      ]
+    }
+  ]
+}

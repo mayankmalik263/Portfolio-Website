@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/mayankmalik263/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/mayankmalik263",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:mayankmalik263@gmail.com",
+      "icon": "mail"
+    }
+  ]
+}

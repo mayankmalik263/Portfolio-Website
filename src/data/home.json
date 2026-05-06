@@ -1,0 +1,16 @@
+{
+  "introduction": {
+    "greeting": "hi mayank here. 👋",
+    "description": "B.Tech CSE student by day, developer by passion. I love blending technology, communication, and leadership to create meaningful impact.",
+    "chatPrompt": "Wanna see my resume?",
+    "escalation": {
+      "text": "For anything else, find me on",
+      "linkText": "LinkedIn",
+      "suffix": ""
+    }
+  },
+  "escalationLink": {
+    "href": "https://www.linkedin.com/in/mayankmalik263/",
+    "title": "LinkedIn"
+  }
+}

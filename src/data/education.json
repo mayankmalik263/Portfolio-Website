@@ -1,0 +1,39 @@
+{
+  "education": [
+    {
+      "name": "University of Petroleum and Energy Studies (UPES)",
+      "href": "https://www.upes.ac.in",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Bachelor of Technology in Computer Science",
+          "start": "Aug 2024",
+          "end": "Present",
+          "description": [
+            "Current CGPA: 8.51",
+            "Class Representative for B.Tech CSE",
+            "Senior Mentor & Lead Enabler for student outreach"
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Model School, Rohtak",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Nursery to 12th Grade",
+          "start": "Oct 2010",
+          "end": "Apr 2024",
+          "description": [
+            "Head Boy (2023-2024) representing ~1,160 students",
+            "Promoted leadership, discipline, and teamwork within the student community"
+          ],
+          "links": []
+        }
+      ]
+    }
+  ]
+}

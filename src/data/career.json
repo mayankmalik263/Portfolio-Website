@@ -1,0 +1,187 @@
+{
+  "career": [
+    {
+      "name": "UPES IET Community",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "PR & Sponsorship Head",
+          "start": "Feb 2026",
+          "end": "Present",
+          "description": []
+        },
+        {
+          "title": "Associate PR & Sponsorship Head",
+          "start": "Feb 2026",
+          "end": "Feb 2026",
+          "description": []
+        }
+      ]
+    },
+    {
+      "name": "IEEE Computational Intelligence Society",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "PR & Sponsorship Head",
+          "start": "Apr 2026",
+          "end": "Present",
+          "description": []
+        }
+      ]
+    },
+    {
+      "name": "UPES",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Senior Mentor",
+          "start": "Sep 2025",
+          "end": "Present",
+          "description": [
+            "Mentoring B.Tech CSE first-year students (Batches 69 and 70); overseeing selection and onboarding of Change Makers and Lead Change Makers.",
+            "Supervising the complete internship cycle for approximately 60 students, ensuring structured execution."
+          ]
+        },
+        {
+          "title": "Lead Enabler",
+          "start": "Sep 2025",
+          "end": "Present",
+          "description": [
+            "Serve as the primary bridge between the Career and Services Department and second-year B.Tech AIML students under the SAMARTH Domain Internship Program.",
+            "Conducted structured interviews to select and onboard 3 Enablers across respective batches.",
+            "Coordinate communication, resolve student queries, and track internship deliverables across batches."
+          ]
+        },
+        {
+          "title": "Class Representative",
+          "start": "Aug 2024",
+          "end": "Dec 2025",
+          "description": [
+            "Elected Class Representative for combined B.Tech CSE Batch 25–26 & Batch 23-24, representing ~60 students.",
+            "Acted as the primary bridge between students and faculty, regularly addressing academic doubts and student concerns."
+          ]
+        },
+        {
+          "title": "Lead Change Maker",
+          "start": "Jan 2025",
+          "end": "Aug 2025",
+          "description": [
+            "Managed 100+ students across 3 batches (B23–B25) and led a team of 5 Change Makers.",
+            "Served as the primary liaison between students and the Career Services Department (CSD).",
+            "Oversaw communication and reporting with the LD Charitable Trust NGO, ensuring student involvement."
+          ]
+        },
+        {
+          "title": "Change Maker",
+          "start": "Oct 2024",
+          "end": "Aug 2025",
+          "description": [
+            "Acted as the point of contact between the Career Services Department (CSD) and a group of 15 student interns for the SRIJAN Social Internship."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Manthan - The Marketing Club of UPES",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Public Relations & Sponsorship Executive",
+          "start": "Feb 2025",
+          "end": "Present",
+          "description": [
+            "Lead Point of Contact (POC) for all external teams participating in Riwaayat-e-Prastav during UURJA.",
+            "Facilitated end-to-end experience of teams from across India, ensuring smooth logistics.",
+            "Secured 3 external team registrations, strengthened sponsor relations, and amplified event reach."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UPES CSI Student Chapter",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Prime Member",
+          "start": "Sep 2024",
+          "end": "Present",
+          "description": []
+        }
+      ]
+    },
+    {
+      "name": "UPES SPE Student Chapter",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Member",
+          "start": "Sep 2024",
+          "end": "Present",
+          "description": []
+        }
+      ]
+    },
+    {
+      "name": "UPES ACM Student Chapter",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Member of PR & Sponsorship Core Team",
+          "start": "Nov 2024",
+          "end": "Jul 2025",
+          "description": [
+            "PR Representative for Victorious Vanguard 2.0 (Valorant tournament with 40+ teams) and Horcrux Hunt (sold-out treasure hunt).",
+            "Managed event contact databases and supported logistics for Global Game Jam."
+          ]
+        },
+        {
+          "title": "Batch Representative",
+          "start": "Sep 2024",
+          "end": "Jul 2025",
+          "description": [
+            "Awarded Best Batch Representative for securing 20+ registrations across the campus.",
+            "Acted as the official liaison between students and the ACM chapter."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Janhit Education & Charitable Trust",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Student Intern",
+          "start": "Jun 2025",
+          "end": "Jul 2025",
+          "description": []
+        }
+      ]
+    },
+    {
+      "name": "OPEN Community",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Member of the Marketing Vertical",
+          "start": "Sep 2024",
+          "end": "Jan 2025",
+          "description": [
+            "Successfully organized and executed an online nationwide Valorant tournament featuring 12+ teams.",
+            "Led end-to-end PR and promotional strategy and managed tournament logistics via Discord.",
+            "Streamed and hosted the tournament on the official UPES OPEN YouTube channel."
+          ]
+        }
+      ]
+    }
+  ]
+}
