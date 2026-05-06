@@ -42,7 +42,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            {currentAge}yo student and developer from Dehradun, India 🇮🇳
+            {currentAge}yo student and developer from Haryana, India 🇮🇳
           </p>
 
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
