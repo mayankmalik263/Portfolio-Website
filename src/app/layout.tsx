@@ -20,13 +20,6 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "Mayank Malik",
   description: "My personal site to showcase my developer work and opinions.",
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/apple-touch-icon.png",
-  },
   manifest: "/manifest.json",
 };
 
