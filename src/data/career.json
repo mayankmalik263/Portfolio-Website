@@ -3,7 +3,7 @@
     {
       "name": "UPES IET Community",
       "href": "",
-      "logo": "",
+      "logo": "/logos/upes_iet_logo.jpg",
       "positions": [
         {
           "title": "PR & Sponsorship Head",
@@ -22,7 +22,7 @@
     {
       "name": "IEEE Computational Intelligence Society",
       "href": "",
-      "logo": "",
+      "logo": "/logos/ieeecis_logo.jpg",
       "positions": [
         {
           "title": "PR & Sponsorship Head",
@@ -35,7 +35,7 @@
     {
       "name": "UPES",
       "href": "",
-      "logo": "",
+      "logo": "/logos/upesdehradun_logo.jpg",
       "positions": [
         {
           "title": "Senior Mentor",
@@ -88,7 +88,7 @@
     {
       "name": "Manthan - The Marketing Club of UPES",
       "href": "",
-      "logo": "",
+      "logo": "/logos/manthan_the_marketing_club_of_upes_logo.jpg",
       "positions": [
         {
           "title": "Public Relations & Sponsorship Executive",
@@ -105,7 +105,7 @@
     {
       "name": "UPES CSI Student Chapter",
       "href": "",
-      "logo": "",
+      "logo": "/logos/csi-logo.jpg",
       "positions": [
         {
           "title": "Prime Member",
@@ -118,7 +118,7 @@
     {
       "name": "UPES SPE Student Chapter",
       "href": "",
-      "logo": "",
+      "logo": "/logos/spe-logo.jpg",
       "positions": [
         {
           "title": "Member",
@@ -131,7 +131,7 @@
     {
       "name": "UPES ACM Student Chapter",
       "href": "",
-      "logo": "",
+      "logo": "/logos/acm-logo.jpg",
       "positions": [
         {
           "title": "Member of PR & Sponsorship Core Team",
@@ -169,7 +169,7 @@
     {
       "name": "OPEN Community",
       "href": "",
-      "logo": "",
+      "logo": "/logos/open_community_logo.jpg",
       "positions": [
         {
           "title": "Member of the Marketing Vertical",

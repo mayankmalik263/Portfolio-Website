@@ -3,7 +3,7 @@
     {
       "name": "University of Petroleum and Energy Studies (UPES)",
       "href": "https://www.upes.ac.in",
-      "logo": "",
+      "logo": "/logos/upesdehradun_logo.jpg",
       "positions": [
         {
           "title": "Bachelor of Technology in Computer Science",
@@ -21,7 +21,7 @@
     {
       "name": "Model School, Rohtak",
       "href": "",
-      "logo": "",
+      "logo": "/logos/model_school_rohtak_logo.jpg",
       "positions": [
         {
           "title": "Nursery to 12th Grade",
