@@ -12,9 +12,7 @@
     "push": "ts-node scripts/push-content.ts"
   },
   "dependencies": {
-    "@ai-sdk/google": "^3.0.67",
     "@hookform/resolvers": "^3.9.0",
-    "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.14",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-dialog": "^1.1.15",
@@ -25,13 +23,11 @@
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-switch": "^1.2.6",
     "@radix-ui/react-tabs": "^1.1.0",
-    "ai": "^6.0.175",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "framer-motion": "^12.23.12",
     "gray-matter": "^4.0.3",
-    "langchain": "^0.3.2",
     "lucide-react": "^0.441.0",
     "mermaid": "^10.9.1",
     "next": "14.2.35",
