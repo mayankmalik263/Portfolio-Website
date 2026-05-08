@@ -1,11 +1,7 @@
 "use server";
 
-import ContactFormEmail from "@/components/email/ContactFormEmail";
-import { Resend } from "resend";
 import { z } from "zod";
 import { ContactFormSchema } from "./schemas";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 type ContactFormInputs = z.infer<typeof ContactFormSchema>;
 
@@ -18,23 +14,20 @@ export async function sendEmail(data: ContactFormInputs) {
 
   try {
     const { name, email, message } = result.data;
-    const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "mayankmalik263@gmail.com",
-      replyTo: [email],
-      cc: [email],
-      subject: `New message from ${name}!`,
-      text: `Name:\n${name}\n\nEmail:\n${email}\n\nMessage:\n${message}`,
-      // react: ContactFormEmail({ name, email, message }),
+
+    const response = await fetch("https://formspree.io/f/xojrnyld", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
     });
 
-    if (error) {
-      console.error("Resend API Error:", error.message);
-      return { error: error.message };
-    }
-
-    if (!data) {
-      throw new Error("Failed to send email!");
+    if (!response.ok) {
+      const errorData = await response.json();
+      console.error("Formspree Error:", errorData);
+      return { error: errorData?.error || "Failed to send message" };
     }
 
     return { success: true };
@@ -43,3 +36,4 @@ export async function sendEmail(data: ContactFormInputs) {
     return { error: error?.message || "An unexpected error occurred" };
   }
 }
+
