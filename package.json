@@ -4,12 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001 -H 0.0.0.0 --turbo",
-    "build": "next build && npm run extract && npm run push",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write .",
-    "extract": "ts-node scripts/extract-content.ts",
-    "push": "ts-node scripts/push-content.ts"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
