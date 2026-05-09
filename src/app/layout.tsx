@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Mayank Malik",
   description: "My personal site to showcase my developer work and opinions.",
   verification: {
-    google: "google58afb08a82096c7a",
+    google: "fvoEB6O0oSAEz2jPwfejvSKEGoePW9IK9M5yBnGgO_8",
   },
   icons: {
     icon: [
