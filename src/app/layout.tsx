@@ -22,6 +22,9 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "Mayank Malik",
   description: "My personal site to showcase my developer work and opinions.",
+  verification: {
+    google: "google58afb08a82096c7a",
+  },
   icons: {
     icon: [
       { url: "/favicon.png", sizes: "48x48", type: "image/png" },
