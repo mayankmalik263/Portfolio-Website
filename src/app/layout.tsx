@@ -20,10 +20,38 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Mayank Malik",
-  description: "My personal site to showcase my developer work and opinions.",
+  metadataBase: new URL("https://mayankmalik.vercel.app"),
+  title: {
+    default: "Mayank Malik",
+    template: "%s | Mayank Malik",
+  },
+  description: "Full-stack developer specializing in modern web technologies and UI/UX.",
   verification: {
     google: "fvoEB6O0oSAEz2jPwfejvSKEGoePW9IK9M5yBnGgO_8",
+  },
+  openGraph: {
+    title: "Mayank Malik",
+    description: "Full-stack developer and UI/UX enthusiast.",
+    url: "https://mayankmalik.vercel.app",
+    siteName: "Mayank Malik",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mayank Malik",
+    description: "Full-stack developer and UI/UX enthusiast.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: [
@@ -48,6 +76,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Mayank Malik",
+              url: "https://mayankmalik.vercel.app",
+              jobTitle: "Full-stack Developer",
+              sameAs: [
+                "https://www.linkedin.com/in/mayankmalik263/",
+                "https://github.com/mayankmalik263",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
