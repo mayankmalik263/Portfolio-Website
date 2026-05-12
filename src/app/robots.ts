@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://mayankmalik.vercel.app/sitemap_index.xml",
+    sitemap: "https://mayankmalik.vercel.app/sitemap.xml",
   };
 }

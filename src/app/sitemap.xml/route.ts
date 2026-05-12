@@ -34,7 +34,7 @@ ${allRoutes
   </url>`;
   })
   .join("\n")}
-</urlset>`;
+</urlset>`.trim();
 
   return new Response(sitemap, {
     headers: {
