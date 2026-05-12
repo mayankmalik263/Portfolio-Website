@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   if (fs.existsSync(blogDirectory)) {
     const postSlugs = fs.readdirSync(blogDirectory);
     blogRoutes = postSlugs.map((slug) => ({
-      url: `${baseUrl}/blog/${slug.replace(/\.mdx$/, "")}`,
+      url: `${baseUrl}/blog/${slug.replace(/\.(md|mdx)$/, "")}`,
       lastModified: new Date(),
     }));
   }
