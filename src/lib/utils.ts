@@ -27,3 +27,32 @@ export function formatViews(views: number) {
     ? standardNumberFormatter.format(safeViews)
     : compactNumberFormatter.format(safeViews);
 }
+
+export function calculateDuration(startDate: string, endDate: string | undefined | null) {
+  const start = new Date(startDate);
+  const end = (endDate && endDate.toLowerCase() !== "present") ? new Date(endDate) : new Date();
+
+  if (isNaN(start.getTime()) || isNaN(end.getTime())) {
+    return "";
+  }
+
+  const years = end.getFullYear() - start.getFullYear();
+  let months = end.getMonth() - start.getMonth() + 1;
+
+  let totalMonths = years * 12 + months;
+  if (totalMonths < 0) totalMonths = 0;
+
+  const displayYears = Math.floor(totalMonths / 12);
+  const displayMonths = totalMonths % 12;
+
+  let durationStr = "";
+  if (displayYears > 0) {
+    durationStr += `${displayYears} yr${displayYears > 1 ? "s" : ""}`;
+  }
+  if (displayMonths > 0) {
+    if (durationStr) durationStr += " ";
+    durationStr += `${displayMonths} mo${displayMonths > 1 ? "s" : ""}`;
+  }
+
+  return durationStr ? ` · ${durationStr}` : "";
+}

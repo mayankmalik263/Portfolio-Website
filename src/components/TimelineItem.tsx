@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/Avatar";
 import { Badge } from "./ui/Badge";
 import Icon from "./Icon";
+import { calculateDuration } from "@/lib/utils";
 
 interface Props {
   experience: Experience;
@@ -45,6 +46,7 @@ export default function TimelineItem({ experience }: Props) {
                   <span>{position.start}</span>
                   <span>{" - "}</span>
                   <span>{position.end ?? "Present"}</span>
+                  <span>{calculateDuration(position.start, position.end)}</span>
                 </time>
               </div>
               {position.description && (
