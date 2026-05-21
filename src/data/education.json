@@ -1,6 +1,24 @@
 {
   "education": [
     {
+      "name": "Indian Institute of Technology Roorkee",
+      "href": "https://www.iitr.ac.in",
+      "logo": "/logos/iit.png",
+      "positions": [
+        {
+          "title": "Data Science and Artificial Intelligence Program by E&ICT Academy, Artificial Intelligence",
+          "start": "Mar 2026",
+          "end": "Nov 2026",
+          "description": [
+            "Currently pursuing the Data Science and Artificial Intelligence Program offered by Masai School in collaboration with E&ICT Academy, IIT Roorkee.",
+            "The program focuses on Data Science, Machine Learning, Artificial Intelligence, Python programming, data analytics, and real-world problem solving through project-based learning.",
+            "Curriculum includes industry-oriented training, hands-on implementation, teamwork, and application-driven learning through multiple modules and capsule projects."
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
       "name": "University of Petroleum and Energy Studies (UPES)",
       "href": "https://www.upes.ac.in",
       "logo": "/logos/upesdehradun_logo.jpg",
