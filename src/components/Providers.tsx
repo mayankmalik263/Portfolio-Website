@@ -2,7 +2,11 @@
 
 import { ThemeProvider, useTheme } from "next-themes";
 import React, { useEffect } from "react";
-import { Toaster } from "sonner";
+import dynamic from "next/dynamic";
+
+const Toaster = dynamic(() => import("sonner").then((m) => m.Toaster), {
+  ssr: false,
+});
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
