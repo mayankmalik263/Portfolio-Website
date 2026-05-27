@@ -4,7 +4,11 @@ import Posts from "@/components/Posts";
 import PostsSkeleton from "@/components/PostsSkeleton";
 import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
-import SwipeCards from "@/components/SwipeCards";
+import dynamic from "next/dynamic";
+const SwipeCards = dynamic(() => import("@/components/SwipeCards"), {
+  ssr: false,
+  loading: () => <div className="md:mr-8 h-[233px] w-[175px] bg-muted" />,
+});
 import { Button } from "@/components/ui/Button";
 import { getPosts } from "@/lib/posts";
 import {
