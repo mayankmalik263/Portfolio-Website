@@ -87,6 +87,12 @@
           "href": "https://github.com/mayankmalik263/waffle-da-express",
           "icon": "github"
         }
+        ,
+        {
+          "name": "Live",
+          "href": "https://waffleda.in/",
+          "icon": "external"
+        }
       ]
     }
   ]
