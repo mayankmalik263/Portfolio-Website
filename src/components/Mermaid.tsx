@@ -2,7 +2,6 @@
 
 import { useEffect, useId, useState } from "react";
 import { useTheme } from "next-themes";
-import mermaid from "mermaid";
 import { cn } from "@/lib/utils";
 
 type MermaidProps = {
@@ -21,26 +20,31 @@ export default function Mermaid({ chart, className }: MermaidProps) {
 
     let cancelled = false;
 
-    mermaid.initialize({
-      startOnLoad: false,
-      securityLevel: "loose",
-      theme: resolvedTheme === "dark" ? "dark" : "default",
-    });
+    // Dynamically import mermaid to avoid shipping it in the initial bundle
+    // on pages that don't render diagrams (reduces unused JS).
+    (async () => {
+      try {
+        const mod = await import("mermaid");
+        const m = (mod && (mod.default ?? mod)) as any;
 
-    mermaid
-      .render(id, chart)
-      .then(({ svg }) => {
+        m.initialize({
+          startOnLoad: false,
+          securityLevel: "loose",
+          theme: resolvedTheme === "dark" ? "dark" : "default",
+        });
+
+        const result = await m.render(id, chart);
         if (!cancelled) {
-          setSvg(svg);
+          setSvg(result.svg);
           setError(null);
         }
-      })
-      .catch((err) => {
+      } catch (err) {
         if (!cancelled) {
           setError("Mermaid diagram failed to render");
           console.error(err);
         }
-      });
+      }
+    })();
 
     return () => {
       cancelled = true;
