@@ -1,7 +1,10 @@
 import BlogImage from "@/components/BlogImage";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import MDXContent from "@/components/MDXContent";
-import ViewCounter from "@/components/ViewCounter";
+import dynamic from "next/dynamic";
+const ViewCounter = dynamic(() => import("@/components/ViewCounter"), {
+  ssr: false,
+});
 import { Badge } from "@/components/ui/Badge";
 import { Separator } from "@/components/ui/Separator";
 import { getPostBySlug, getPosts } from "@/lib/posts";
