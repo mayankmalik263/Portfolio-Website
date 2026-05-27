@@ -1,5 +1,9 @@
 import PostsSkeleton from "@/components/PostsSkeleton";
-import PostsWithSearch from "@/components/PostsWithSearch";
+import dynamic from "next/dynamic";
+const PostsWithSearch = dynamic(
+  () => import("@/components/PostsWithSearch"),
+  { ssr: false, loading: () => <PostsSkeleton rows={6} showControls /> },
+);
 import { getPosts } from "@/lib/posts";
 import { Suspense } from "react";
 
