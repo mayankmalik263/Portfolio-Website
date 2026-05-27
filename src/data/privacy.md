@@ -1,9 +1,5 @@
 _Last Updated: Dec 2025_
 
-## TL;DR
-
-This site doesn’t track you. If you use the chatbot, messages are stored in my database so I can see what people are asking and improve the site.
-
 ## Hey 👋
 
 Thanks for stopping by. This is my personal portfolio and blog where I share my work, projects, and thoughts. I care about privacy, so here’s a simple, no-nonsense explanation of how things work.
