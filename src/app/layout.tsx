@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     default: "Mayank Malik",
     template: "%s | Mayank Malik",
   },
-  description: "Full-stack developer specializing in modern web technologies and UI/UX.",
+  description: "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
   verification: {
     google: "fvoEB6O0oSAEz2jPwfejvSKEGoePW9IK9M5yBnGgO_8",
   },
   openGraph: {
     title: "Mayank Malik",
-    description: "Full-stack developer and UI/UX enthusiast.",
+    description: "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
     url: "https://mayankmalik.vercel.app",
     siteName: "Mayank Malik",
     locale: "en_US",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mayank Malik",
-    description: "Full-stack developer and UI/UX enthusiast.",
+    description: "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
   },
   robots: {
     index: true,
@@ -85,7 +85,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Mayank Malik",
               url: "https://mayankmalik.vercel.app",
-              jobTitle: "Full-stack Developer",
+              jobTitle: "AI Engineer",
               sameAs: [
                 "https://www.linkedin.com/in/mayankmalik263/",
                 "https://github.com/mayankmalik263",
