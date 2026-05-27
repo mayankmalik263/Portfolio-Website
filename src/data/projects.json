@@ -88,11 +88,7 @@
           "icon": "github"
         }
         ,
-        {
-          "name": "Live",
-          "href": "https://waffleda.in/",
-          "icon": "external"
-        }
+        
       ]
     }
   ]
