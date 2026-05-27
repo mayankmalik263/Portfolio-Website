@@ -73,6 +73,7 @@
       "name": "Waffle Da! — Brand Website & App",
       "description": "Production domain website and companion mobile app for the Waffle Da! brand. A customer-facing ordering site with a dynamic multi-category menu, gourmet item customization, real-time order tracking, and a Supabase-backed admin dashboard for live inventory and order management.",
       "image": "https://raw.githubusercontent.com/mayankmalik263/waffle-da-express/main/src/assets/waffle-da-logo.png",
+      "image": "",
       "tags": [
         "React",
         "TypeScript",
