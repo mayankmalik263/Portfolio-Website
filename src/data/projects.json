@@ -68,5 +68,26 @@
         }
       ]
     }
+    ,
+    {
+      "name": "Waffle Da! Express",
+      "description": "A fast, responsive food ordering web + mobile app built with Vite, React, TypeScript and Tailwind — features a dynamic multi-category menu, customizable waffles, real-time admin dashboard, and Supabase-backed realtime ordering.",
+      "image": "https://raw.githubusercontent.com/mayankmalik263/waffle-da-express/main/src/assets/waffle-da-logo.png",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind",
+        "Supabase",
+        "Capacitor"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mayankmalik263/waffle-da-express",
+          "icon": "github"
+        }
+      ]
+    }
   ]
 }
