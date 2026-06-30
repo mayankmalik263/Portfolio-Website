@@ -28,13 +28,15 @@ export const metadata: Metadata = {
     default: "Mayank Malik",
     template: "%s | Mayank Malik",
   },
-  description: "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
+  description:
+    "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
   verification: {
     google: "fvoEB6O0oSAEz2jPwfejvSKEGoePW9IK9M5yBnGgO_8",
   },
   openGraph: {
     title: "Mayank Malik",
-    description: "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
+    description:
+      "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
     url: "https://mayankmalik.vercel.app",
     siteName: "Mayank Malik",
     locale: "en_US",
@@ -43,7 +45,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mayank Malik",
-    description: "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
+    description:
+      "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
   },
   robots: {
     index: true,

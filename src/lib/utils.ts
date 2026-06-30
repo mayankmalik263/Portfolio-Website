@@ -10,7 +10,7 @@ export function formatDate(date: string) {
     day: "numeric",
     month: "long",
     year: "numeric",
-    timeZone: "UTC"
+    timeZone: "UTC",
   });
 }
 
@@ -28,9 +28,15 @@ export function formatViews(views: number) {
     : compactNumberFormatter.format(safeViews);
 }
 
-export function calculateDuration(startDate: string, endDate: string | undefined | null) {
+export function calculateDuration(
+  startDate: string,
+  endDate: string | undefined | null,
+) {
   const start = new Date(startDate);
-  const end = (endDate && endDate.toLowerCase() !== "present") ? new Date(endDate) : new Date();
+  const end =
+    endDate && endDate.toLowerCase() !== "present"
+      ? new Date(endDate)
+      : new Date();
 
   if (isNaN(start.getTime()) || isNaN(end.getTime())) {
     return "";

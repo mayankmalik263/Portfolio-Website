@@ -17,7 +17,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       disableTransitionOnChange
     >
       <ThemeColorUpdater />
-        {children}
+      {children}
       <ToastProvider />
     </ThemeProvider>
   );

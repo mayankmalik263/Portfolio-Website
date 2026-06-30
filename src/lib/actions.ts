@@ -36,4 +36,3 @@ export async function sendEmail(data: ContactFormInputs) {
     return { error: error?.message || "An unexpected error occurred" };
   }
 }
-

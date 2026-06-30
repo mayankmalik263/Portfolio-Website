@@ -12,7 +12,6 @@ Importantly: this site does not use a database and does not include a chatbot. W
 
 There are only a couple of cases where information might be stored:
 
-
 ### Contacting me
 
 If you email me or use the contact form, I’ll only use your email to reply and continue the conversation. I won’t add you to any mailing list or store your contact details in a searchable database unless you explicitly ask me to.

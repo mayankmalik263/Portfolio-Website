@@ -31,22 +31,30 @@ export async function getPosts(limit?: number): Promise<PostSummary[]> {
 
     const fileNames = fs.readdirSync(contentDir);
     const posts: PostSummary[] = fileNames
-      .filter((fileName) => fileName.endsWith(".md") || fileName.endsWith(".mdx"))
+      .filter(
+        (fileName) => fileName.endsWith(".md") || fileName.endsWith(".mdx"),
+      )
       .map((fileName) => {
         const fullPath = path.join(contentDir, fileName);
         const fileContents = fs.readFileSync(fullPath, "utf8");
         const matterResult = matter(fileContents);
 
         const slug = fileName.replace(/\.mdx?$/, "");
-        
+
         const post: PostSummary = {
           id: slug,
           slug,
           title: matterResult.data.title || slug,
           summary: matterResult.data.summary,
           image: matterResult.data.image,
-          publishedAt: matterResult.data.publishedAt instanceof Date ? matterResult.data.publishedAt.toISOString() : matterResult.data.publishedAt,
-          updatedAt: matterResult.data.updatedAt instanceof Date ? matterResult.data.updatedAt.toISOString() : matterResult.data.updatedAt,
+          publishedAt:
+            matterResult.data.publishedAt instanceof Date
+              ? matterResult.data.publishedAt.toISOString()
+              : matterResult.data.publishedAt,
+          updatedAt:
+            matterResult.data.updatedAt instanceof Date
+              ? matterResult.data.updatedAt.toISOString()
+              : matterResult.data.updatedAt,
           tags: matterResult.data.tags || [],
           readingTime: matterResult.data.readingTime || "1 min read",
           draft: matterResult.data.draft || false,
@@ -59,7 +67,9 @@ export async function getPosts(limit?: number): Promise<PostSummary[]> {
     // Sort posts by date descending
     const sortedPosts = posts.sort((a, b) => {
       if (!a.publishedAt || !b.publishedAt) return 0;
-      return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+      return (
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+      );
     });
 
     return limit ? sortedPosts.slice(0, limit) : sortedPosts;
@@ -73,7 +83,7 @@ export async function getPostBySlug(slug: string): Promise<PostDetail | null> {
   try {
     const fullPathMd = path.join(contentDir, `${slug}.md`);
     const fullPathMdx = path.join(contentDir, `${slug}.mdx`);
-    
+
     let fullPath = "";
     if (fs.existsSync(fullPathMd)) {
       fullPath = fullPathMd;
@@ -92,8 +102,14 @@ export async function getPostBySlug(slug: string): Promise<PostDetail | null> {
       title: matterResult.data.title || slug,
       summary: matterResult.data.summary,
       image: matterResult.data.image,
-      publishedAt: matterResult.data.publishedAt instanceof Date ? matterResult.data.publishedAt.toISOString() : matterResult.data.publishedAt,
-      updatedAt: matterResult.data.updatedAt instanceof Date ? matterResult.data.updatedAt.toISOString() : matterResult.data.updatedAt,
+      publishedAt:
+        matterResult.data.publishedAt instanceof Date
+          ? matterResult.data.publishedAt.toISOString()
+          : matterResult.data.publishedAt,
+      updatedAt:
+        matterResult.data.updatedAt instanceof Date
+          ? matterResult.data.updatedAt.toISOString()
+          : matterResult.data.updatedAt,
       tags: matterResult.data.tags || [],
       readingTime: matterResult.data.readingTime || "1 min read",
       draft: matterResult.data.draft || false,

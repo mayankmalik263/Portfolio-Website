@@ -6,7 +6,7 @@ export async function GET() {
 
   // Static routes
   const staticRoutes = ["/", "/blog", "/projects", "/contact", "/privacy"].map(
-    (route) => `${baseUrl}${route}`
+    (route) => `${baseUrl}${route}`,
   );
 
   // Dynamic Blog routes
@@ -16,7 +16,7 @@ export async function GET() {
   if (fs.existsSync(blogDirectory)) {
     const postSlugs = fs.readdirSync(blogDirectory);
     blogRoutes = postSlugs.map(
-      (slug) => `${baseUrl}/blog/${slug.replace(/\.(md|mdx)$/, "")}`
+      (slug) => `${baseUrl}/blog/${slug.replace(/\.(md|mdx)$/, "")}`,
     );
   }
 

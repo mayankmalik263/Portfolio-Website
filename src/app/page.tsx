@@ -7,7 +7,7 @@ import Socials from "@/components/Socials";
 import dynamic from "next/dynamic";
 const SwipeCards = dynamic(() => import("@/components/SwipeCards"), {
   ssr: false,
-  loading: () => <div className="md:mr-8 h-[233px] w-[175px] bg-muted" />,
+  loading: () => <div className="h-[233px] w-[175px] bg-muted md:mr-8" />,
 });
 import { Button } from "@/components/ui/Button";
 import { getPosts } from "@/lib/posts";
@@ -52,8 +52,6 @@ export default function Home() {
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
             {homeContent.introduction.description}
           </p>
-
-
 
           <section className="mt-6 flex flex-wrap items-center gap-4">
             <Link href="/resume.pdf" target="_blank">

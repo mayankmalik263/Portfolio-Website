@@ -46,15 +46,17 @@ export function ProjectCard({ project }: Props) {
       <CardFooter className="flex h-full flex-col items-start justify-between gap-4">
         {tags && tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
-            {Array.from(tags).sort().map((tag) => (
-              <Badge
-                key={tag}
-                className="px-1 py-0 text-[10px]"
-                variant="secondary"
-              >
-                {tag}
-              </Badge>
-            ))}
+            {Array.from(tags)
+              .sort()
+              .map((tag) => (
+                <Badge
+                  key={tag}
+                  className="px-1 py-0 text-[10px]"
+                  variant="secondary"
+                >
+                  {tag}
+                </Badge>
+              ))}
           </div>
         )}
         {links && links.length > 0 && (

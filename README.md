@@ -1,8 +1,8 @@
 # Mayank Malik's Portfolio
 
-A clean, minimal, and lightning-fast personal portfolio website built with Next.js, Tailwind CSS, and Shadcn UI. 
+A clean, minimal, and lightning-fast personal portfolio website built with Next.js, Tailwind CSS, and Shadcn UI.
 
-*Updated: May 7, 2026*
+_Updated: May 7, 2026_
 
 ## Features
 
@@ -22,7 +22,9 @@ A clean, minimal, and lightning-fast personal portfolio website built with Next.
 - **Content:** Local Markdown / JSON
 
 ## What's New?
+
 This portfolio was heavily modified and streamlined from its original template to provide a simpler, highly performant, and maintenance-free experience:
+
 - **Removed the Backend:** Transitioned from a complex Python FastAPI/PostgreSQL backend to a 100% serverless static markdown file system.
 - **Removed the Chatbot:** Purged the legacy OpenAI chatbot integration to reduce dependencies, API costs, and complexity.
 - **Complete Personalization:** Fully integrated professional experience, education, and social links based on real-world data.
@@ -53,7 +55,7 @@ npm run dev
 
 ## Deployment
 
-Simply push your code to GitHub and connect it to Vercel for instant, zero-configuration deployment. 
+Simply push your code to GitHub and connect it to Vercel for instant, zero-configuration deployment.
 
 ## Acknowledgements
 
