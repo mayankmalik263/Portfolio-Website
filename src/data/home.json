@@ -1,7 +1,7 @@
 {
   "introduction": {
     "greeting": "hi mayank here. 👋",
-    "description": "B.Tech CSE student by day, developer by passion. I love blending technology, communication, and leadership to create meaningful impact.",
+    "description": "B.Tech CSE student (AI/ML specialization) at UPES, developer, and community leader. I focus on building AI systems, scalable web apps, and driving community-led execution.",
     "chatPrompt": "Wanna see my resume?",
     "escalation": {
       "text": "For anything else, find me on",
