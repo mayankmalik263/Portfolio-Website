@@ -61,16 +61,14 @@ export function ProjectCard({ project }: Props) {
         )}
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
-            {Array.from(links)
-              .sort((a, b) => (a.name || "").localeCompare(b.name || ""))
-              .map((link, idx) => (
-                <Link href={link?.href} key={idx} target="_blank">
-                  <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
-                    <Icon name={link.icon} className="size-3" />
-                    {link.name}
-                  </Badge>
-                </Link>
-              ))}
+            {links.map((link, idx) => (
+              <Link href={link?.href} key={idx} target="_blank">
+                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                  <Icon name={link.icon} className="size-3" />
+                  {link.name}
+                </Badge>
+              </Link>
+            ))}
           </div>
         )}
       </CardFooter>

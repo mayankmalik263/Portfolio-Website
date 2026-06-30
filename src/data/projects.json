@@ -7,8 +7,13 @@
       "tags": ["Python", "LangGraph", "AI Agents", "System Design"],
       "links": [
         {
+          "name": "Website",
+          "href": "https://mass-sim.vercel.app/",
+          "icon": "globe"
+        },
+        {
           "name": "Source",
-          "href": "https://github.com/mayankmalik263/MASS",
+          "href": "https://github.com/mayankmalik263/mass-startup-simulator",
           "icon": "github"
         }
       ]
@@ -98,6 +103,11 @@
         "Capacitor"
       ],
       "links": [
+        {
+          "name": "Website",
+          "href": "https://waffleda.in/",
+          "icon": "globe"
+        },
         {
           "name": "Source",
           "href": "https://github.com/mayankmalik263/waffle-da-express",
