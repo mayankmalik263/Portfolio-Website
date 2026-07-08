@@ -5,9 +5,23 @@ const PostsWithSearch = dynamic(() => import("@/components/PostsWithSearch"), {
   loading: () => <PostsSkeleton rows={6} showControls />,
 });
 import { getPosts } from "@/lib/posts";
+import type { Metadata } from "next";
 import { Suspense } from "react";
 
 export const revalidate = 600;
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Articles and notes by Mayank Malik on AI, machine learning, LLMs, web development, and building in tech communities.",
+  keywords: [
+    "Mayank Malik blog",
+    "AI blog",
+    "machine learning articles",
+    "developer blog",
+  ],
+  alternates: { canonical: "/blog" },
+};
 
 async function BlogPosts() {
   const posts = await getPosts();

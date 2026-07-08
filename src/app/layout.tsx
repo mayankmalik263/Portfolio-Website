@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Providers from "@/components/Providers";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 const Analytics = dynamic(
   () => import("@vercel/analytics/next").then((mod) => mod.Analytics),
   { ssr: false },
@@ -22,19 +23,42 @@ const calistoga = Calistoga({
   weight: ["400"],
 });
 
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://mayankmalik.vercel.app"),
   title: {
-    default: "Mayank Malik",
+    default: "Mayank Malik - AI/ML Engineer & Developer",
     template: "%s | Mayank Malik",
   },
   description:
-    "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
+    "Mayank Malik is a B.Tech CSE (AI/ML) student at UPES, AI engineer, developer, and community leader building intelligent applications, machine learning systems, and modern web experiences.",
+  keywords: [
+    "Mayank Malik",
+    "Mayank Malik portfolio",
+    "Mayank Malik UPES",
+    "Mayank Malik AI Engineer",
+    "AI Engineer",
+    "Machine Learning Engineer",
+    "ML student",
+    "LLM developer",
+    "AI/ML engineer India",
+    "UPES CSE AI ML",
+    "full stack developer",
+    "community leader",
+    "tech community lead",
+    "student developer portfolio",
+  ],
+  authors: [{ name: "Mayank Malik", url: "https://mayankmalik.vercel.app" }],
+  creator: "Mayank Malik",
   verification: {
     google: "fvoEB6O0oSAEz2jPwfejvSKEGoePW9IK9M5yBnGgO_8",
   },
+  alternates: {
+    canonical: "https://mayankmalik.vercel.app",
+  },
   openGraph: {
-    title: "Mayank Malik",
+    title: "Mayank Malik - AI/ML Engineer & Developer",
     description:
       "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
     url: "https://mayankmalik.vercel.app",
@@ -44,7 +68,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mayank Malik",
+    title: "Mayank Malik - AI/ML Engineer & Developer",
     description:
       "AI Engineering student and builder focused on intelligent applications, machine learning, and modern web experiences.",
   },
@@ -91,7 +115,22 @@ export default function RootLayout({
               "@type": "Person",
               name: "Mayank Malik",
               url: "https://mayankmalik.vercel.app",
-              jobTitle: "AI Engineer",
+              image: "https://mayankmalik.vercel.app/img/me-1.webp",
+              jobTitle: "AI/ML Engineer",
+              description:
+                "B.Tech CSE (AI/ML) student at UPES, AI engineer, developer, and community leader building intelligent applications and modern web experiences.",
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "UPES (University of Petroleum and Energy Studies)",
+              },
+              knowsAbout: [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Large Language Models",
+                "Full Stack Development",
+                "Web Development",
+                "Community Leadership",
+              ],
               sameAs: [
                 "https://www.linkedin.com/in/mayankmalik263/",
                 "https://github.com/mayankmalik263",
@@ -99,6 +138,11 @@ export default function RootLayout({
             }),
           }}
         />
+        {GTM_ID ? (
+          <Script id="gtm-base" strategy="afterInteractive">
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
+          </Script>
+        ) : null}
       </head>
       <body
         className={cn(
@@ -107,6 +151,16 @@ export default function RootLayout({
           calistoga.variable,
         )}
       >
+        {GTM_ID ? (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        ) : null}
         <Providers>
           <Header />
           <div className="mx-auto flex max-w-3xl flex-col px-8">

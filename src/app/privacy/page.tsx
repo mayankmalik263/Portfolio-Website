@@ -1,6 +1,15 @@
 import { promises as fs } from "fs";
 import path from "path";
 import ReactMarkdown from "react-markdown";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for mayankmalik.vercel.app, the personal portfolio of Mayank Malik.",
+  alternates: { canonical: "/privacy" },
+  robots: { index: false, follow: true },
+};
 
 async function getPrivacyContent() {
   const filePath = path.join(process.cwd(), "src/data/privacy.md");

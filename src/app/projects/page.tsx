@@ -1,4 +1,19 @@
 import Projects from "@/components/Projects";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Explore projects by Mayank Malik - AI/ML systems, LLM-powered applications, and full-stack web builds spanning machine learning, automation, and modern web development.",
+  keywords: [
+    "Mayank Malik projects",
+    "AI projects",
+    "machine learning projects",
+    "LLM projects",
+    "full stack projects portfolio",
+  ],
+  alternates: { canonical: "/projects" },
+};
 
 export default async function ProjectPage() {
   return (
