@@ -1,4 +1,5 @@
 import Experience from "@/components/Experience";
+import FAQ from "@/components/FAQ";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Posts from "@/components/Posts";
 import PostsSkeleton from "@/components/PostsSkeleton";
@@ -94,6 +95,8 @@ export default function Home() {
           <RecentPosts />
         </Suspense>
       </section>
+
+      <FAQ />
     </article>
   );
 }
