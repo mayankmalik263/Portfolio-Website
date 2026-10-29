@@ -1,3 +1,5 @@
+import projectsData from "@/data/projects.json";
+import { projectSchema } from "@/lib/schemas";
 import fs from "fs";
 import path from "path";
 
@@ -5,9 +7,17 @@ export async function GET() {
   const baseUrl = "https://mayankmalik.vercel.app";
 
   // Static routes
-  const staticRoutes = ["/", "/blog", "/projects", "/contact", "/privacy"].map(
-    (route) => `${baseUrl}${route}`,
-  );
+  const staticRoutes = [
+    "/",
+    "/work",
+    "/blog",
+    "/projects",
+    "/contact",
+    "/privacy",
+  ].map((route) => `${baseUrl}${route}`);
+  const projectRoutes = projectSchema
+    .parse(projectsData)
+    .projects.map((p) => `${baseUrl}/projects/${p.slug}`);
 
   // Dynamic Blog routes
   const blogDirectory = path.join(process.cwd(), "content/blog");
@@ -20,7 +30,7 @@ export async function GET() {
     );
   }
 
-  const allRoutes = [...staticRoutes, ...blogRoutes];
+  const allRoutes = [...staticRoutes, ...projectRoutes, ...blogRoutes];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
