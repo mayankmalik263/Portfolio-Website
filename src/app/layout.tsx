@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Providers from "@/components/Providers";
+import SiteBackground from "@/components/SiteBackground";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
 import Script from "next/script";
@@ -9,13 +10,18 @@ const Analytics = dynamic(
   { ssr: false },
 );
 import type { Metadata, Viewport } from "next";
-import { Calistoga, Inter } from "next/font/google";
+import { Calistoga, Inter, Roboto_Flex } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["400", "500", "600", "700"],
+});
+// Variable weight + optical size axes drive the hero's VariableProximity effect.
+const robotoFlex = Roboto_Flex({
+  subsets: ["latin"],
+  variable: "--font-flex",
+  axes: ["opsz"],
 });
 const calistoga = Calistoga({
   subsets: ["latin"],
@@ -162,6 +168,7 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           inter.variable,
           calistoga.variable,
+          robotoFlex.variable,
         )}
       >
         {GTM_ID ? (
@@ -175,6 +182,7 @@ export default function RootLayout({
           </noscript>
         ) : null}
         <Providers>
+          <SiteBackground />
           <Header />
           <div className="mx-auto flex max-w-3xl flex-col px-8">
             <main className="grow">{children}</main>
