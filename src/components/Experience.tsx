@@ -1,25 +1,46 @@
+"use client";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs";
-import careerData from "@/data/career.json";
-import educationData from "@/data/education.json";
-import { careerSchema, educationSchema } from "@/lib/schemas";
+import { experienceCategories } from "@/lib/experience";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import Timeline from "./Timeline";
 
 export default function Experience() {
-  const career = careerSchema.parse(careerData).career;
-  const education = educationSchema.parse(educationData).education;
+  const [tab, setTab] = useState(experienceCategories[0].id);
 
   return (
-    <Tabs defaultValue="work">
-      <TabsList className="mb-2 grid w-full grid-cols-2">
-        <TabsTrigger value="work">Work</TabsTrigger>
-        <TabsTrigger value="education">Education</TabsTrigger>
+    <Tabs value={tab} onValueChange={setTab}>
+      {/* Tabs size to their labels and scroll sideways on narrow screens. */}
+      <TabsList className="mb-2 flex h-auto w-full justify-start overflow-x-auto [scrollbar-width:none]">
+        {experienceCategories.map((c) => (
+          <TabsTrigger
+            key={c.id}
+            value={c.id}
+            className="relative flex-auto shrink-0 px-3 data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+          >
+            {tab === c.id && (
+              <motion.span
+                layoutId="experience-tab"
+                className="absolute inset-0 rounded-md bg-background shadow"
+                transition={{ type: "spring", bounce: 0, duration: 0.35 }}
+              />
+            )}
+            <span className="relative">{c.name}</span>
+          </TabsTrigger>
+        ))}
       </TabsList>
-      <TabsContent value="work">
-        <Timeline experience={career}></Timeline>
-      </TabsContent>
-      <TabsContent value="education">
-        <Timeline experience={education}></Timeline>
-      </TabsContent>
+      {experienceCategories.map((c) => (
+        <TabsContent key={c.id} value={c.id}>
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
+          >
+            <Timeline experience={c.experience} />
+          </motion.div>
+        </TabsContent>
+      ))}
     </Tabs>
   );
 }
