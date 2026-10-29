@@ -1,3 +1,4 @@
+import FAQ from "@/components/FAQ";
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 const ContactForm = dynamic(() => import("@/components/ContactForm"), {
@@ -24,6 +25,8 @@ export default function ContactPage() {
       <h1 className="title">contact me.</h1>
 
       <ContactForm />
+
+      <FAQ />
     </article>
   );
 }
