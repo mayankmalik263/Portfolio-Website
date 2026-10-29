@@ -1,11 +1,16 @@
 import Link from "next/link";
 import Socials from "./Socials";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Footer() {
   return (
     <footer className="w-full pt-12">
       <div className="mx-auto flex max-w-3xl flex-col items-center justify-center px-8 pb-32 sm:flex-row-reverse sm:justify-between">
-        <Socials />
+        <div className="flex items-center gap-4">
+          <Socials />
+          {/* The CardNav bar has no slot for it, so the theme switch lives here. */}
+          <ThemeToggle />
+        </div>
         <section className="mt-8 text-center sm:mt-0 sm:text-left">
           <p className="text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()}{" "}
