@@ -23,7 +23,14 @@
           "start": "Aug 2026",
           "end": "Sep 2026",
           "category": "tech",
-          "description": []
+          "description": [
+            "Website build: Designed and shipped the full launch7.in site by hand, around 15 pages: homepage, about, two services pages, six AI-agent product pages, a teardown page, contact, blog and work. Managed in git with real deploy config (.htaccess, redirects, OG image, SEO metadata).",
+            "Backend and infrastructure: Stood up the live backend, a Supabase project with edge functions for forms and data, plus a verified Resend email domain for transactional mail. Working infrastructure, not static pages.",
+            "Internal systems: Built the internal admin panel end to end, with login and password reset plus client, board, files, people and work views wired to Supabase, and a notifications layer carried through a v3 upgrade.",
+            "Capability-Pack catalogue foundations: Built the data groundwork for the core product: a 50-entry sample-skills dataset, a catalogue entry spec, a skill-record schema, a data audit, a UI quality scorecard and a reference-rendering page.",
+            "Strategy and the pivot: Wrote the founding strategy stack in week one: business model, pitch deck, funding proposal, internal-alignment doc, market research and a 90-plus-page market-validation audit. Then led the August pivot with the “New Direction” and utility-layer proposal that moved Launch7 to the Capability-Packs product, plus handoff docs.",
+            "Go-to-market and content: Produced pricing architecture, a video brand board, an Instagram carousel, a team status report and context card, a RAG pitch, and a 60-day content roadmap with 60 reel hooks and scripts."
+          ]
         }
       ]
     },

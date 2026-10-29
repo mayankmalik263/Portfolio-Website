@@ -51,14 +51,25 @@ export default function TimelineItem({ experience }: Props) {
               </div>
               {position.description && (
                 <ul className="ml-4 mt-2 list-outside list-disc">
-                  {position.description.map((desc, i) => (
-                    <li
-                      key={i}
-                      className="prose pr-8 text-sm dark:prose-invert"
-                    >
-                      {desc}
-                    </li>
-                  ))}
+                  {position.description.map((desc, i) => {
+                    // A short "Label: " prefix becomes a bold lead-in.
+                    const [, label, rest] =
+                      desc.match(/^([^:()]{3,40}): ([\s\S]*)$/) ?? [];
+                    return (
+                      <li
+                        key={i}
+                        className="prose pr-8 text-sm dark:prose-invert"
+                      >
+                        {label ? (
+                          <>
+                            <strong>{label}:</strong> {rest}
+                          </>
+                        ) : (
+                          desc
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               )}
               {position.links && position.links.length > 0 && (
