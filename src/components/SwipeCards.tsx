@@ -74,16 +74,28 @@ const Card = ({
     return `${rotateRaw.get() + offset}deg`;
   });
 
-  const handleDragEnd = (event: any, info: { offset: { x: number } }) => {
-    if (Math.abs(info.offset.x) > 100) {
-      // If swiped far enough, remove the card
-      setCards((pv) => pv.filter((v) => v.id !== id));
+  const handleDragEnd = (
+    event: any,
+    info: { offset: { x: number }; velocity: { x: number } },
+  ) => {
+    // Project where a flick would land, so a fast short swipe still dismisses.
+    const projected = info.offset.x + info.velocity.x * 0.2;
+    if (Math.abs(projected) > 100) {
+      const dir = Math.sign(projected);
+      // Fly off with the finger's velocity, then remove.
+      animate(x, dir * 400, {
+        type: "spring",
+        bounce: 0,
+        duration: 0.35,
+        velocity: info.velocity.x,
+        onComplete: () => setCards((pv) => pv.filter((v) => v.id !== id)),
+      });
     } else {
-      // Otherwise, animate the card back to the center
       animate(x, 0, {
         type: "spring",
         stiffness: 400,
         damping: 40,
+        velocity: info.velocity.x,
       });
     }
   };

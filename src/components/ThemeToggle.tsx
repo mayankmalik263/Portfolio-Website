@@ -13,8 +13,9 @@ export default function ThemeToggle() {
     setMounted(true);
   }, []);
 
+  // Same-size placeholder so the header doesn't shift when the icon appears.
   if (!mounted) {
-    return null;
+    return <span className="block size-9" aria-hidden="true" />;
   }
 
   return (

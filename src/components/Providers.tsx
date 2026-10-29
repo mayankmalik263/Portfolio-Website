@@ -1,5 +1,6 @@
 "use client";
 
+import { MotionConfig } from "framer-motion";
 import { ThemeProvider, useTheme } from "next-themes";
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
@@ -17,7 +18,8 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       disableTransitionOnChange
     >
       <ThemeColorUpdater />
-      {children}
+      {/* Every framer-motion animation honours prefers-reduced-motion. */}
+      <MotionConfig reducedMotion="user">{children}</MotionConfig>
       <ToastProvider />
     </ThemeProvider>
   );

@@ -81,11 +81,15 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Large display type reads best slightly tightened. */
   .title {
-    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
+    @apply font-serif text-5xl leading-[1.05] tracking-tight decoration-border/75 decoration-2;
   }
   .link {
-    @apply text-muted-foreground transition-colors hover:text-foreground;
+    @apply text-muted-foreground transition-colors duration-200 hover:text-foreground;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
   }
   .prose pre {
     @apply overflow-x-auto rounded-lg bg-accent px-5 py-4 text-sm;
