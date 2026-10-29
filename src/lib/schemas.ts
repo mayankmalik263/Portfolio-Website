@@ -55,6 +55,8 @@ const experiencePosition = z.object({
   start: z.string(),
   end: z.string().optional(),
   description: z.array(z.string()).optional(),
+  // Curated impact bullets shown on the home page; `description` stays the full record.
+  highlights: z.array(z.string()).optional(),
   links: z.array(iconLink).optional(),
   category: z.enum(["tech", "leadership", "pr", "communities"]).optional(),
 });

@@ -128,7 +128,8 @@ export default function Communities() {
         </div>
 
         <div
-          className="min-h-[9rem] rounded-xl border p-5"
+          // Frosted backdrop so the background grid's hover glow can't wash out the text.
+          className="min-h-[9rem] rounded-xl border bg-background/70 p-5 backdrop-blur-md"
           role="tabpanel"
           aria-live="polite"
         >
@@ -152,10 +153,12 @@ export default function Communities() {
                       {p.start} – {p.end ?? "Present"}
                     </span>
                   </div>
-                  {p.description?.[0] && (
-                    <p className="text-sm text-muted-foreground">
-                      {p.description[0]}
-                    </p>
+                  {p.highlights && (
+                    <ul className="flex list-disc flex-col gap-1 pl-4 text-sm text-muted-foreground marker:text-muted-foreground/60">
+                      {p.highlights.map((h) => (
+                        <li key={h}>{h}</li>
+                      ))}
+                    </ul>
                   )}
                 </li>
               ))}
