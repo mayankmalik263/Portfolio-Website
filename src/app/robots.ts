@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: "/studio/",
       },
     ],
     sitemap: "https://mayankmalik.vercel.app/sitemap.xml",
