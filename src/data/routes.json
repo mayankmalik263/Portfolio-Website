@@ -7,6 +7,12 @@
       "showInNav": true
     },
     {
+      "path": "/work",
+      "name": "work",
+      "description": "Work experience, leadership and education",
+      "showInNav": true
+    },
+    {
       "path": "/projects",
       "name": "projects",
       "description": "Portfolio projects showcase",

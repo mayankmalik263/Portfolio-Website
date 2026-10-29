@@ -20,14 +20,33 @@ const iconLink = z.object({
 });
 export type IconLink = z.infer<typeof iconLink>;
 
-const project = z.object({
-  name: z.string(),
-  description: z.string(),
-  href: z.string().url().optional(),
-  image: z.string().optional(),
-  tags: z.array(z.string()),
-  links: z.array(iconLink),
+const media = z.object({
+  type: z.enum(["image", "video"]),
+  src: z.string(),
+  alt: z.string().optional(),
+  poster: z.string().optional(),
 });
+export type Media = z.infer<typeof media>;
+
+const slugify = (s: string) =>
+  s
+    .split(" — ")[0]
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+const project = z
+  .object({
+    name: z.string(),
+    context: z.string().default("Personal project"),
+    description: z.string(),
+    href: z.string().url().optional(),
+    image: z.string().optional(),
+    tags: z.array(z.string()),
+    links: z.array(iconLink),
+    media: z.array(media).default([]),
+  })
+  .transform((p) => ({ ...p, slug: slugify(p.name) }));
 export const projectSchema = z.object({ projects: z.array(project) });
 export type Project = z.infer<typeof project>;
 
@@ -37,6 +56,7 @@ const experiencePosition = z.object({
   end: z.string().optional(),
   description: z.array(z.string()).optional(),
   links: z.array(iconLink).optional(),
+  category: z.enum(["tech", "leadership", "pr", "communities"]).optional(),
 });
 export type ExperiencePosition = z.infer<typeof experiencePosition>;
 

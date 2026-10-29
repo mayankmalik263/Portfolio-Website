@@ -1,17 +1,29 @@
 {
   "career": [
     {
-      "name": "NewCycl",
+      "name": "SYNK",
       "href": "",
-      "logo": "/logos/newcycl_logo.jpg",
+      "logo": "",
       "positions": [
         {
-          "title": "Intern",
-          "start": "Jun 2026",
-          "end": "Present",
-          "description": [
-            "Working on the Rawbin project (household food-waste management through technology) at Newcycl Clean Technologies Pvt. Ltd."
-          ]
+          "title": "Artificial Intelligence Intern",
+          "start": "Sep 2026",
+          "end": "Sep 2026",
+          "description": []
+        }
+      ]
+    },
+    {
+      "name": "Launch7",
+      "href": "",
+      "logo": "",
+      "positions": [
+        {
+          "title": "CRO & Head of Internal Systems",
+          "start": "Aug 2026",
+          "end": "Sep 2026",
+          "category": "tech",
+          "description": []
         }
       ]
     },
@@ -21,9 +33,15 @@
       "logo": "/logos/upes_iet_logo.jpg",
       "positions": [
         {
+          "title": "Vice President",
+          "start": "Jul 2026",
+          "end": "Present",
+          "description": []
+        },
+        {
           "title": "PR & Sponsorship Head",
           "start": "Feb 2026",
-          "end": "Present",
+          "end": "Jul 2026",
           "description": [
             "Managed PR, sponsorship outreach, and campaign execution for two flagship events — System Crash, a 3-hour team-based system design simulation, and Carlsen Checkmate, a structured 5-round chess tournament.",
             "Secured Unstop as \"Powered By\" sponsor for both events through direct outreach and partnership negotiation.",
@@ -44,6 +62,25 @@
       ]
     },
     {
+      "name": "NewCycl",
+      "href": "",
+      "logo": "/logos/newcycl_logo.jpg",
+      "positions": [
+        {
+          "title": "Full Stack Intern",
+          "start": "Jun 2026",
+          "end": "Jul 2026",
+          "description": [
+            "Named one of the 2 top-performing interns across the cohort (which included students from IITs and NITs) for delivering two production websites largely solo.",
+            "Built a Next.js API route that proxies the Instagram Graph API to pull live reel media server-side, with hover-to-play video on rawbin.in; moved the access token out of source into environment variables.",
+            "Reworked rawbin.in's SEO on the Next.js 14 App Router: dynamic sitemap across 11 routes, JSON-LD Product/FAQPage/BreadcrumbList schemas, OG and Twitter images, an llms.txt, and noindex on legal pages.",
+            "Shipped a PWA manifest for rawbin.in and fixed a dark-mode bug that rendered white-on-white text across 8 component files.",
+            "Ran a site-wide brand refactor on the NewCycl company site (Vite + React), built ContactForm and MissionVision sections, and added motion polish: animated cursor, preloader, route transitions and a canvas ripple hero."
+          ]
+        }
+      ]
+    },
+    {
       "name": "IEEE Computational Intelligence Society",
       "href": "",
       "logo": "/logos/ieeecis_logo.jpg",
@@ -51,9 +88,33 @@
         {
           "title": "PR & Sponsorship Head",
           "start": "Apr 2026",
-          "end": "Present",
+          "end": "Sep 2026",
           "description": [
-            "Leading public relations, brand marketing, and sponsorship initiatives for the student chapter."
+            "Led public relations, brand marketing, and sponsorship initiatives for the student chapter."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Manthan - The Marketing Club of UPES",
+      "href": "",
+      "logo": "/logos/manthan_the_marketing_club_of_upes_logo.jpg",
+      "positions": [
+        {
+          "title": "PR & Sponsorship Head",
+          "start": "Mar 2026",
+          "end": "Aug 2026",
+          "description": []
+        },
+        {
+          "title": "Public Relations & Sponsorship Executive",
+          "start": "Feb 2025",
+          "end": "Mar 2026",
+          "description": [
+            "Selected through a competitive internal recruitment process.",
+            "Lead Point of Contact for all external teams in Riwaayat-e-Prastav, a national-level marketing event during UURJA (UPES's flagship cultural fest).",
+            "Managed logistics, hospitality, and communication for visiting teams from across India, earning strong feedback from every visiting team.",
+            "Secured 3 external team registrations; strengthened sponsor relations."
           ]
         }
       ]
@@ -120,24 +181,6 @@
       ]
     },
     {
-      "name": "Manthan - The Marketing Club of UPES",
-      "href": "",
-      "logo": "/logos/manthan_the_marketing_club_of_upes_logo.jpg",
-      "positions": [
-        {
-          "title": "Public Relations & Sponsorship Executive",
-          "start": "Feb 2025",
-          "end": "Present",
-          "description": [
-            "Selected through a competitive internal recruitment process.",
-            "Lead Point of Contact for all external teams in Riwaayat-e-Prastav, a national-level marketing event during UURJA (UPES's flagship cultural fest).",
-            "Managed logistics, hospitality, and communication for visiting teams from across India.",
-            "Secured 3 external team registrations; strengthened sponsor relations."
-          ]
-        }
-      ]
-    },
-    {
       "name": "UPES CSI Student Chapter",
       "href": "",
       "logo": "/logos/csi-logo.jpg",
@@ -145,7 +188,7 @@
         {
           "title": "Prime Member",
           "start": "Sep 2024",
-          "end": "Present",
+          "end": "Aug 2026",
           "description": []
         }
       ]
@@ -223,7 +266,23 @@
           "description": [
             "Successfully organized and executed an online nationwide Valorant tournament featuring 12+ teams.",
             "Led end-to-end PR and promotional strategy and managed tournament logistics via Discord.",
-            "Streamed and hosted the tournament on the official UPES OPEN YouTube channel."
+            "Streamed and hosted the tournament on the official UPES OPEN YouTube channel, with finals reaching 3+ hours of live coverage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Model School, Rohtak",
+      "href": "",
+      "logo": "/logos/model_school_rohtak_logo.jpg",
+      "positions": [
+        {
+          "title": "Head Boy",
+          "start": "Apr 2023",
+          "end": "May 2024",
+          "description": [
+            "Elected Head Boy, representing about 1,160 students from Nursery to 12th grade.",
+            "Primary liaison between students and faculty; led daily assemblies, coordinated student council meetings, and organized major school events."
           ]
         }
       ]

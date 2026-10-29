@@ -2,9 +2,24 @@
   "projects": [
     {
       "name": "MASS — Multi-Agent Startup Simulator",
-      "description": "A LangGraph-based simulation framework simulating a founding startup team with 5 autonomous agents (CEO, Finance, Marketing, Product, Sales) overseen by a Supervisor agent enforcing consensus, complete with shared memory and disagreement tracking.",
+      "context": "Personal project",
+      "media": [
+        {
+          "type": "image",
+          "src": "/projects/mass/home.webp",
+          "alt": "MASS landing page"
+        }
+      ],
+      "description": "A multi-agent AI system that stress-tests a startup idea and turns it into a concrete build plan. Five agent personas (CEO, Finance, Marketing, Product, Sales) debate the plan while a Supervisor enforces consensus; deterministic Python checks on runway, burn and CAC vs LTV trigger a repair pass when the model gets the numbers wrong. Streams the debate live to a Next.js UI over Server-Sent Events.",
       "image": "",
-      "tags": ["Python", "LangGraph", "AI Agents", "System Design"],
+      "tags": [
+        "Python",
+        "LangGraph",
+        "FastAPI",
+        "Next.js",
+        "Supabase",
+        "AI Agents"
+      ],
       "links": [
         {
           "name": "Website",
@@ -19,56 +34,71 @@
       ]
     },
     {
-      "name": "Portfolio Website",
-      "description": "A high-performance, SEO-optimized personal portfolio + technical blog showcasing work as a developer / AIML engineer. Features an MDX-based blog system, dark-mode-first UI with Framer Motion, and near-perfect Lighthouse scores.",
+      "name": "APIx — Real-Time Airfare Price Index for India",
+      "context": "Team project · Smart India Hackathon 2026 (SIH26056)",
+      "description": "A daily airfare price index for India's domestic routes, built to complement the monthly CPI airfare figure. Tracks 6 routes across 5 booking windows (30 observations a day), aggregates them with official index formulas (Jevons within routes, Laspeyres across them), and links every published number to a SHA-256-fingerprinted raw response. Ships with a public dashboard, an operator console and an OpenAPI.",
       "image": "",
       "tags": [
-        "Next.js 14",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion",
-        "MDX",
-        "Vercel"
+        "Python",
+        "FastAPI",
+        "Playwright",
+        "Statistics",
+        "Data Engineering"
       ],
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/mayankmalik263/Portfolio-Website",
+          "href": "https://github.com/mayankmalik263/apix",
           "icon": "github"
         }
       ]
     },
     {
-      "name": "ML Enhanced Dynamic MAC Protocol Optimization",
-      "description": "A continuous-time, physics-aware Discrete-Event Simulation framework that models MAC-layer protocols and uses a Random Forest classifier to dynamically optimize protocol selection in real-time.",
+      "name": "Rawbin.in — Smart Composter Website",
+      "context": "Built at NewCycl (Full Stack Intern)",
+      "media": [
+        {
+          "type": "image",
+          "src": "/projects/rawbin/home.webp",
+          "alt": "Rawbin home page"
+        }
+      ],
+      "description": "The production website for Rawbin, India's first smart home composter. Added a server-side Instagram Graph API proxy for live reels, reworked SEO on the Next.js App Router (dynamic sitemap, JSON-LD schemas, OG images, llms.txt), shipped a PWA manifest and fixed a dark-mode rendering bug across the site.",
       "image": "",
-      "tags": ["Machine Learning", "Networking", "Python"],
+      "tags": ["Next.js", "React", "Tailwind CSS", "Framer Motion", "SEO"],
       "links": [
         {
-          "name": "Source",
-          "href": "https://github.com/mayankmalik263/ML-Enhanced-Dynamic-MAC-Protocol-Optimization",
-          "icon": "github"
+          "name": "Website",
+          "href": "https://rawbin.in/",
+          "icon": "globe"
         }
       ]
     },
     {
-      "name": "IMC Prosperity Trading Bot",
-      "description": "A robust algorithmic trading bot developed for the IMC Prosperity challenge. Features safe mid-price handling, dynamic execution thresholds, and queue-priority logic to execute profitable trades.",
+      "name": "Zero to Modern AI — Gamified AI Learning Platform",
+      "context": "Personal project",
+      "description": "A multi-user learning platform for modern AI concepts, styled after DataCamp and Duolingo. A path engine renders checkpoints, side quests and project gates; XP, levels and streaks track progress; Supabase handles auth (email and Google) with per-user data isolated through Row-Level Security, plus a one-click import of older offline progress.",
       "image": "",
-      "tags": ["Algorithmic Trading", "Python", "Finance"],
+      "tags": ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS"],
       "links": [
         {
+          "name": "Website",
+          "href": "https://learn-ai-os.vercel.app",
+          "icon": "globe"
+        },
+        {
           "name": "Source",
-          "href": "https://github.com/mayankmalik263/IMC_Prosperity_Trading_Bot",
+          "href": "https://github.com/mayankmalik263/Academic-OS-Web-app",
           "icon": "github"
         }
       ]
     },
     {
-      "name": "ML Framework for AQI Classification",
-      "description": "An applied machine learning framework leveraging XGBoost to classify the Air Quality Index (AQI) of the Delhi NCR region, achieving 98% accuracy through temporal data harmonization.",
+      "name": "Delhi NCR AQI Classification Engine",
+      "context": "Personal project",
+      "description": "A machine learning framework that classifies Delhi NCR air quality into three health-risk tiers (Good, Poor, Bad) from pollutant readings (PM2.5, PM10, NO2, CO) and weather conditions. Moving to XGBoost on harmonised data lifted accuracy from about 57% to about 98%.",
       "image": "",
-      "tags": ["Machine Learning", "Data Science", "Python"],
+      "tags": ["Python", "XGBoost", "Machine Learning", "Data Science"],
       "links": [
         {
           "name": "Source",
@@ -78,27 +108,36 @@
       ]
     },
     {
-      "name": "2D Game Engine in Java",
-      "description": "A custom 2D game engine built from scratch in Java, featuring a complete Entity Component System (ECS), batch rendering with OpenGL, an integrated Dear ImGui editor with docking, JBox2D physics, and GSON-based scene serialization.",
+      "name": "ML-Enhanced Dynamic MAC Protocol Optimization",
+      "context": "Team lead · Data Communication & Networks course",
+      "description": "A SimPy discrete-event simulator that models MAC-layer protocols (Slotted ALOHA, CSMA/CA) with RF propagation delay, node placement and bursty traffic, then uses an ensemble classifier to pick the best protocol in real time as network load changes. Led a team of five.",
       "image": "",
-      "tags": ["Java", "OpenGL", "Game Development"],
+      "tags": ["Python", "SimPy", "Machine Learning", "Networking"],
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/mayankmalik263/Game-Engine-In-Java",
+          "href": "https://github.com/mayankmalik263/ML-Enhanced-Dynamic-MAC-Protocol-Optimization",
           "icon": "github"
         }
       ]
     },
     {
       "name": "Waffle Da! — Brand Website & App",
-      "description": "Production domain website and companion mobile app for the Waffle Da! brand. A customer-facing ordering site with a dynamic multi-category menu, gourmet item customization, real-time order tracking, and a Supabase-backed admin dashboard for live inventory and order management.",
+      "context": "Client project",
+      "media": [
+        {
+          "type": "image",
+          "src": "/projects/waffle-da/home.webp",
+          "alt": "Waffle Da home page"
+        }
+      ],
+      "description": "Ordering website and companion mobile app for Waffle Da!, a late-night food brand in Bidholi, Dehradun. A multi-category menu with item customization and order tracking, plus a Supabase-backed admin panel for live menu and order management.",
       "image": "https://raw.githubusercontent.com/mayankmalik263/waffle-da-express/main/src/assets/waffle-da-logo.png",
       "tags": [
         "React",
         "TypeScript",
         "Vite",
-        "Tailwind",
+        "Tailwind CSS",
         "Supabase",
         "Capacitor"
       ],
@@ -111,6 +150,34 @@
         {
           "name": "Source",
           "href": "https://github.com/mayankmalik263/waffle-da-express",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Jade — 2D Game Engine in Java",
+      "context": "Course project · Object-Oriented Programming",
+      "description": "A 2D game engine built from scratch in Java: an Entity Component System, OpenGL 3.3 batch rendering with custom GLSL shaders, a Dear ImGui level editor with docking, JBox2D physics and scene serialization.",
+      "image": "",
+      "tags": ["Java", "OpenGL", "LWJGL", "Game Development"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mayankmalik263/Game-Engine-In-Java",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "IMC Prosperity Trading Bot",
+      "context": "Personal project",
+      "description": "An algorithmic trading bot for the IMC Prosperity challenge, with safe mid-price handling for one-sided order books, dynamic execution thresholds and queue-priority logic.",
+      "image": "",
+      "tags": ["Python", "Algorithmic Trading", "Finance"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mayankmalik263/IMC_Prosperity_Trading_Bot",
           "icon": "github"
         }
       ]
